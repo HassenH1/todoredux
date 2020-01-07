@@ -8,7 +8,7 @@ const todoReducer = (state = inititalState, action) => {
   switch(action.type) {
     case ADDTODO: return {
       ...state,
-      todo: state.todo
+      text: state.todo
     }
     default: return state
   }

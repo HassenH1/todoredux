@@ -34,7 +34,7 @@ function Form({ todo }) {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={} onChange={(e) => e.target.value}/>
+        <input type="text" {...todo} onChange={(e) => e.target.value}/>
         <button type="submit">Submit</button>
       </form>
     </div>
@@ -42,6 +42,7 @@ function Form({ todo }) {
 }
 
 const mapStateToProps = state => {
+  console.log(state)
   return {
     todo: state.todo
   }

@@ -2,6 +2,7 @@ export const ADDTODO = "ADDTODO"
 
 export const AddToDo = () => {
   return {
-    type: ADDTODO
+    type: ADDTODO,
+    text: ""
   }
 }
